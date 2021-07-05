@@ -1,7 +1,5 @@
-$background-color: #F6F9FE;
-$color: #353252;
+@import 'styles/_variables.scss';
+@import 'styles/_base.scss';
+@import 'normalize.css/normalize';
 
-body {
-    background-color: $background-color;
-    color: $color;
-}
+@import 'styles/_main.scss';
