@@ -1,7 +1,16 @@
 .alert {
-    background-color: $color;
-    border-radius: 2.1em;
-    color: $background-color;
-    margin-bottom: 2em;
-    padding: 1em 1.8em;
+  background-color: $accent-color;
+  border-radius: 2.1em;
+  color: $font-color-accent;
+  margin-bottom: 2em;
+  padding: 0.5em 1.8em;
+
+  a {
+    color: inherit;
+    font-family: $font-bold;
+
+    &:hover {
+      color: $white;
+    }
+  }
 }
