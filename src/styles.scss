@@ -1,5 +1,12 @@
 @import 'styles/_variables.scss';
-@import 'styles/_base.scss';
 @import 'normalize.css/normalize';
+@import 'styles/_base.scss';
 
+@import 'styles/_wrapper.scss';
+@import 'styles/_header.scss';
+@import 'styles/_nav.scss';
 @import 'styles/_main.scss';
+@import 'styles/_alert.scss';
+@import 'styles/_form.scss';
+@import 'styles/_heroImage.scss';
+@import 'styles/_featuredCompanies.scss';
