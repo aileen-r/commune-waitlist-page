@@ -1,0 +1,35 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+
+  button,
+  input {
+    border-radius: 0.3em;
+    padding: 20px 25px;
+  }
+
+  input {
+    border: 2px solid $border-color;
+    color: $font-color;
+    margin-bottom: 15px;
+
+    &::placeholder {
+      color: $font-color-light;
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      border: 2px solid $accent-color;
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: $accent-color;
+    border: none;
+    color: $white;
+    font-family: $font-bold;
+  }
+}

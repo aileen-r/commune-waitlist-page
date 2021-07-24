@@ -1,9 +1,24 @@
 .featured-companies {
+  h3 {
+    color: $font-color;
+    font-family: $font-regular;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+
   ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
+
+    li {
+      img {
+        display: block;
+        margin-bottom: 15px;
+        margin-right: 15px;
+      }
+    }
   }
 }
