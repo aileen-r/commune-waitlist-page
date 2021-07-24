@@ -11,6 +11,16 @@ main {
       font-weight: 500;
       line-height: 1.3em;
       padding: 0 20px;
+
+      @media (min-width: $bp-tablet) {
+        font-size: 3.2em;
+      }
+    }
+
+    .hero-intro {
+      @media (min-width: $bp-tablet) {
+        margin-top: 0;
+      }
     }
   }
 }

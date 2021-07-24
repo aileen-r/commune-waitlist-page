@@ -3,6 +3,12 @@ form {
   flex-direction: column;
   margin-bottom: 35px;
 
+  @media (min-width: $bp-tablet) {
+    flex-direction: row;
+    max-width: 90%;
+    margin: 0 auto 60px auto;
+  }
+
   button,
   input {
     border-radius: 0.3em;
@@ -13,6 +19,12 @@ form {
     border: 2px solid $border-color;
     color: $font-color;
     margin-bottom: 15px;
+
+    @media (min-width: $bp-tablet) {
+      flex-grow: 1;
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
 
     &::placeholder {
       color: $font-color-light;
@@ -31,5 +43,10 @@ form {
     border: none;
     color: $white;
     font-family: $font-bold;
+
+    @media (min-width: $bp-tablet) {
+      width: 30%;
+    }
+
   }
 }

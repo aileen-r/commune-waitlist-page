@@ -2,8 +2,12 @@
   background-color: $accent-color;
   border-radius: 2.1em;
   color: $font-color-accent;
-  margin-bottom: 2em;
+  margin: 0 auto 30px auto;
   padding: 0.5em 1.8em;
+
+  @media (min-width: $bp-tablet) {
+    max-width: 85%;
+  }
 
   a {
     color: inherit;
