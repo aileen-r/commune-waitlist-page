@@ -1,26 +1,44 @@
 main {
   .hero {
+    align-items: center;
+    display: flex;
     text-align: center;
+    margin-bottom: 35px;
+
+    @media (min-width: $bp-tablet) {
+      margin-bottom: 60px;
+    }
 
     @media (min-width: $bp-desktop) {
+      margin-bottom: 120px;
       text-align: start;
     }
 
-    .hero-title {
-      font-size: 2.2em;
-      font-weight: 500;
-      line-height: 1.3em;
-      padding: 0 20px;
+    .hero-content {
+      .hero-title {
+        font-size: 2.2em;
+        font-weight: 500;
+        line-height: 1.3em;
+        padding: 0 20px;
 
-      @media (min-width: $bp-tablet) {
-        font-size: 3.2em;
+        @media (min-width: $bp-tablet) {
+          font-size: 3.2em;
+        }
+
+        @media (min-width: $bp-desktop) {
+          padding: 0;
+        }
+      }
+
+      .hero-intro {
+        @media (min-width: $bp-tablet) {
+          margin-top: 0;
+        }
       }
     }
 
-    .hero-intro {
-      @media (min-width: $bp-tablet) {
-        margin-top: 0;
-      }
+    .hero-image-wrapper {
+      max-width: 33%;
     }
   }
 }

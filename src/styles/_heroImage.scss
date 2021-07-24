@@ -1,7 +1,13 @@
 .hero-image-wrapper {
     display: none;
+    margin-left: 75px;
 
     @media (min-width: $bp-desktop) {
         display: block;
+    }
+
+    img {
+        display: block;
+        width: 100%;
     }
 }

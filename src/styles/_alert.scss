@@ -6,7 +6,11 @@
   padding: 0.5em 1.8em;
 
   @media (min-width: $bp-tablet) {
-    max-width: 85%;
+    display: inline-block;
+  }
+
+  @media (min-width: $bp-desktop) {  
+    margin: 0 0 30px 0;
   }
 
   a {
