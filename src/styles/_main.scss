@@ -26,6 +26,7 @@ main {
         }
 
         @media (min-width: $bp-desktop) {
+          font-size: clamp(2.5em, 4vw, 3.2em);
           padding: 0;
         }
       }
