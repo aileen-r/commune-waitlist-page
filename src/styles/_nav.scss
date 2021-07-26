@@ -1,3 +1,5 @@
+// Transition adapted from https://codepen.io/RSH87/pen/rmgYbo?editors=1100
+
 .nav {
   button {
     background-color: transparent;
@@ -19,27 +21,42 @@
   }
 
   .nav-menu-overlay {
-    background-color: rgba(255, 255, 255, 0.9);
-    display: none;
-    height: 100%;
     left: 0;
-    padding: 70px 40px 40px 40px;
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: 1;
 
-    @media (min-width: $bp-tablet) {
-      padding: 70px 90px;
+    &:before,
+    &:after {
+      background: rgba($accent-color, 0.2);
+      border-bottom-left-radius: 2em;
+      border-bottom-right-radius: 2em;
+      content: "";
+      height: calc(100vh + 2em);
+      position: fixed;
+      transform: translateX(0%) translateY(-100%);
+      transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
+      width: 100vw;
+      z-index: -1;
     }
 
-    &.active {
-      display: block;
+    &:after {
+      background: rgba($accent-color, 1);
+      transition-delay: 0s;
+    }
+
+    &:before {
+      transition-delay: 0.1s;
     }
 
     .nav-menu {
-      position: relative;
-      
+      display: none;
+      position: fixed;
+      text-align: center;
+      top: 50%;
+      transform: translate(0%, -50%);
+      width: 100%;
+
       .nav-close {
         font-size: 48px;
         line-height: 20px;
@@ -50,8 +67,33 @@
         right: 0;
       }
 
-      ul {
+      .nav-items {
         margin: 0;
+
+        li {
+          list-style: none;
+        }
+      }
+    }
+
+    &.active {
+      visibility: visible;
+
+      &:before,
+      &:after {
+        transform: translateX(0%) translateY(0%);
+      }
+
+      &:after {
+        transition-delay: 0.1s;
+      }
+      
+      &:before {
+        transition-delay: 0s;
+      }
+
+      .nav-menu {
+        display: block;
       }
     }
   }
