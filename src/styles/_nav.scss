@@ -2,6 +2,20 @@
   button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    display: block;
+    margin: -10px;
+    padding: 10px;
+
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      outline: 2px solid $accent-color;
+    }
+
+    img {
+      display: block;
+    }
   }
 
   .nav-menu-overlay {
@@ -9,13 +23,36 @@
     display: none;
     height: 100%;
     left: 0;
+    padding: 70px 40px 40px 40px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
-    
-    .nav-close {
-      font-size: 55px;
+
+    @media (min-width: $bp-tablet) {
+      padding: 70px 90px;
+    }
+
+    &.active {
+      display: block;
+    }
+
+    .nav-menu {
+      position: relative;
+      
+      .nav-close {
+        font-size: 48px;
+        line-height: 20px;
+        margin-right: -12px;
+        margin-top: -4px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      ul {
+        margin: 0;
+      }
     }
   }
 }
