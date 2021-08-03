@@ -1,12 +1,6 @@
-<!-- http://www.ashleysheridan.co.uk/blog/Making+an+Accessible+Hamburger+Menu -->
 <div class="nav">
-  <button id="menu-open" class="nav-hamburger" aria-label="Open menu">
-    <img src="url:./assets/hamburger-menu.svg" aria-hidden="true" />
-  </button>
-
   <div id="mobile-menu" class="nav-menu-overlay">
     <nav class="nav-menu">
-      <button id="menu-close" class="nav-close">&times;</button>
       <ul class="nav-items">
         <li><a id="first-menu-item" href="#">Features</a></li>
         <li><a href="#">Affiliates</a></li>
@@ -16,4 +10,10 @@
       </ul>
     </nav>
   </div>
+
+  <button id="menu-toggle" class="nav-hamburger" aria-label="Menu">
+    <div class="line line-1"></div>
+    <div class="line line-2"></div>
+    <div class="line line-3"></div>
+  </button>
 </div>

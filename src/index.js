@@ -1,6 +1,5 @@
 const body = document.querySelector("body");
-const menuOpen = document.getElementById("menu-open");
-const menuClose = document.getElementById("menu-close");
+const menuToggle = document.getElementById("menu-toggle");
 const menu = document.getElementById("mobile-menu");
 const firstMenuItem = document.getElementById("first-menu-item");
 
@@ -13,8 +12,15 @@ const openMenu = () => {
 const closeMenu = () => {
   body.classList.remove("disable-scroll");
   menu.classList.remove("active");
-  menuOpen.focus();
+  menuToggle.focus();
 };
 
-menuOpen.addEventListener("click", openMenu);
-menuClose.addEventListener("click", closeMenu);
+const toggleMenu = () => {
+  if (menu.classList.contains("active")) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+}
+
+menuToggle.addEventListener("click", toggleMenu);

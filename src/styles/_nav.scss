@@ -1,4 +1,5 @@
 // Transition adapted from https://codepen.io/RSH87/pen/rmgYbo?editors=1100
+// Hamburger adapter from https://codepen.io/himalayasingh/pen/mNOJPM?editors=1100
 
 .nav {
   button {
@@ -57,16 +58,6 @@
       transform: translate(0%, -50%);
       width: 100%;
 
-      .nav-close {
-        font-size: 48px;
-        line-height: 20px;
-        margin-right: -12px;
-        margin-top: -4px;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-
       .nav-items {
         margin: 0;
 
@@ -87,7 +78,7 @@
       &:after {
         transition-delay: 0.1s;
       }
-      
+
       &:before {
         transition-delay: 0s;
       }
@@ -95,6 +86,61 @@
       .nav-menu {
         display: block;
       }
+
+      & + .nav-hamburger {
+        .line {
+          background-color: $white;
+        }
+
+        .line-1 {
+          top: -2px;
+          transform: rotateZ(45deg);
+        }
+
+        .line-2 {
+          right: 3px;
+          top: 0;
+          transform: rotateZ(-45deg);
+          width: 30px;
+        }
+
+        .line-3 {
+          left: 1px;
+          top: 3px;
+          transform: rotateZ(45deg);
+        }
+      }
+    }
+  }
+
+  .nav-hamburger {
+    height: 40px;
+    position: relative;
+    width: 40px;
+    z-index: 2;
+
+    .line {
+      background-color: $heading-color;
+      height: 4px;
+      margin-bottom: 4px;
+      position: relative;
+      top: 0;
+      transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
+        0.3s ease right, 0.3s ease background-color 0.5s;
+    }
+
+    .line-1 {
+      transform-origin: 0;
+    }
+
+    .line-2 {
+      right: 0;
+      width: 20px;
+    }
+
+    .line-3 {
+      margin-bottom: 0;
+      transform-origin: 20px;
     }
   }
 }
