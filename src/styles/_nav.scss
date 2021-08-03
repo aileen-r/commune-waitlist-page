@@ -88,7 +88,7 @@
             }
 
             &:hover {
-              background-color: mix($accent-color, $white, 90%);
+              background-color: $secondary-accent-color;
             }
           }
 
@@ -128,7 +128,7 @@
 
           @for $i from 0 through 5 {
             &:nth-child(#{$i}) {
-              transition-delay: math.div( 0.3 * $i, 4) + 0.4 + s;
+              transition-delay: math.div(0.3 * $i, 4) + 0.4 + s;
             }
           }
         }

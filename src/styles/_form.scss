@@ -51,7 +51,13 @@ form {
     background-color: $accent-color;
     border: none;
     color: $white;
+    cursor: pointer;
     font-family: $font-bold;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $secondary-accent-color;
+    }
 
     @media (min-width: $bp-tablet) {
       width: auto;
