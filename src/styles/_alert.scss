@@ -1,0 +1,25 @@
+.alert {
+  background-color: $accent-color;
+  border-radius: 2.1em;
+  color: $font-color-accent;
+  margin: 0 auto 30px auto;
+  padding: 0.5em 1.8em;
+  text-align: center;;
+
+  @media (min-width: $bp-tablet) {
+    display: inline-block;
+  }
+
+  @media (min-width: $bp-desktop) {  
+    margin: 0 0 30px 0;
+  }
+
+  a {
+    color: inherit;
+    font-family: $font-bold;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

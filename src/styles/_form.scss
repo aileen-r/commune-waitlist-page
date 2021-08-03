@@ -1,0 +1,67 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $bp-tablet) {
+    flex-direction: row;
+    max-width: 90%;
+    margin: 0 auto 0 auto;
+  }
+
+  @media (min-width: $bp-desktop) {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  button,
+  input {
+    border-radius: 0.3em;
+    padding: 20px 25px;
+  }
+
+  input {
+    border: 2px solid $border-color;
+    color: $font-color;
+    margin-bottom: 15px;
+    width: 100%;
+
+    @media (min-width: $bp-tablet) {
+      flex-grow: 1;
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      max-width: 330px;
+    }
+
+    &::placeholder {
+      color: $font-color-light;
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      border: 2px solid $accent-color;
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: $accent-color;
+    border: none;
+    color: $white;
+    cursor: pointer;
+    font-family: $font-bold;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $secondary-accent-color;
+    }
+
+    @media (min-width: $bp-tablet) {
+      width: auto;
+    }
+
+  }
+}

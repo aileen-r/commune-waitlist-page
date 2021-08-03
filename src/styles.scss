@@ -1,7 +1,13 @@
-$background-color: #F6F9FE;
-$color: #353252;
+@import 'styles/_variables.scss';
+@import 'normalize.css/normalize';
+@import 'styles/_fonts.scss';
+@import 'styles/_base.scss';
 
-body {
-    background-color: $background-color;
-    color: $color;
-}
+@import 'styles/_wrapper.scss';
+@import 'styles/_header.scss';
+@import 'styles/_nav.scss';
+@import 'styles/_main.scss';
+@import 'styles/_alert.scss';
+@import 'styles/_form.scss';
+@import 'styles/_heroImage.scss';
+@import 'styles/_featuredCompanies.scss';

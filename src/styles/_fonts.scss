@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Nunito Bold";
+  src: url("url:./assets/nunito-bold-webfont.woff2") format("woff2"),
+    url("url:./assets/nunito-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("url:./assets/nunito-regular-webfont.woff2") format("woff2"),
+    url("url:./assets/nunito-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-bold: "Nunito Bold", sans-serif;
+$font-regular: "Nunito", sans-serif;
