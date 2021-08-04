@@ -16,6 +16,7 @@
     "posthtml-include": "^1.7.1"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "normalize.css": "^8.0.1"
   }
 }

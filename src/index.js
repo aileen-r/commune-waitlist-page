@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const body = document.querySelector("body");
 const menuToggle = document.getElementById("menu-toggle");
 const menu = document.getElementById("mobile-menu");
@@ -21,6 +24,9 @@ const toggleMenu = () => {
   } else {
     openMenu();
   }
-}
+};
 
+AOS.init({
+  duration: 500,
+});
 menuToggle.addEventListener("click", toggleMenu);
