@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html",
+    "clean": "rimraf dist",
+    "start": "npm run clean && parcel serve ./src/index.html",
+    "build": "npm run clean && parcel build ./src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aileen Rae",
@@ -13,10 +14,14 @@
     "@parcel/transformer-image": "^2.0.0-nightly.2374",
     "@parcel/transformer-sass": "^2.0.0-beta.3.1",
     "parcel": "^2.0.0-nightly.750",
-    "posthtml-include": "^1.7.1"
+    "posthtml-include": "^1.7.1",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "aos": "^2.3.4",
     "normalize.css": "^8.0.1"
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
