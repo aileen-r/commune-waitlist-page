@@ -63,10 +63,10 @@
       overflow: hidden;
       position: fixed;
       text-align: center;
-      top: 50%;
+      top: 50vh;
       transform: translate(0%, -50%);
       transition: max-height ease 1s, opacity ease 1s;
-      width: 100%;
+      width: calc(100% + 40px);
 
       .nav-items {
         color: $font-color-accent;
