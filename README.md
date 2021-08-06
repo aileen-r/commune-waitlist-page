@@ -8,7 +8,7 @@ A fully responsive landing page.
 
 Design taken from the [Commune Waitlist Page Codewell challenge](https://www.codewell.cc/challenges/608d9565747bad001532bd64).
 
-This project was built to demo getting up and running with Parcel for this Dev.to article: [Blazing Fast Frontend Development with Parcel](https://dev.to/aileenr/rapid-frontend-development-with-parceljs-2clm-temp-slug-1376267?preview=b872efdc11506018d61bfe929d2444e4b3a9cb3599e6fe9d2c3c6c4aa8047efb6d0efa3ade708241575ecb533c13926a60eeb42794bf966f4ff54251).
+This project was built to demo getting up and running with Parcel for this Dev.to article: [Blazing Fast Frontend Development with Parcel](https://dev.to/aileenr/blazing-fast-frontend-development-with-parcel-21dc).
 
 ## Technologies Used
 
