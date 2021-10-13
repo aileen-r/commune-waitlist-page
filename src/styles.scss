@@ -1,5 +1,7 @@
 @import 'styles/_variables.scss';
-@import 'normalize.css/normalize';
+// https://github.com/parcel-bundler/parcel/issues/6002
+// Relative imports for node_modules are broken
+@import '../node_modules/normalize.css/normalize';
 @import 'styles/_fonts.scss';
 @import 'styles/_base.scss';
 
